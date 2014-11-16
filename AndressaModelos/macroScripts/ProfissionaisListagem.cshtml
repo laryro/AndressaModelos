@@ -1,0 +1,13 @@
+﻿@inherits umbraco.MacroEngines.DynamicNodeContext
+
+<h2>Profissionais</h2>
+
+<ul>
+    @foreach (var profissional in Model.Children()) { 
+        <li>
+            <a href="@profissional.Url">
+                @profissional.nome
+            </a>
+        </li>
+    }
+</ul>
